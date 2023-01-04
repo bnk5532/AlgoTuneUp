@@ -1,6 +1,6 @@
 // Fill in the body of each function with the code required
 
-var add = function(num1, num2) {
+var add = function(num1, num2, num3) {
     return num1 + num2
 };
 
@@ -21,8 +21,13 @@ var addSubtract = function(num1, num2, num3) {
 };
 
 var addDivide = function(num1, num2, num3) {
-    return num1 - num2 / num3;
+    return num1 - num2 / num3
 }
 
-console.log(divide)
+var addThree = function(num1, num2, num3) {
+    return num1 + num2 + num3
+}
+
+console.log(addDivide)
+console.log(addThree)
 console.log(addSubtract)

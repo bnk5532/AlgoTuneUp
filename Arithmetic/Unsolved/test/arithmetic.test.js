@@ -50,9 +50,9 @@ describe("addSubtract", function(){
     var num2 = 20;
     var num3 = 30;
 
-    var result1 = add(num1, num2);
-    console.log(result1)
-    var finalResult = subtract(result1, num3);
+    var result = add(num1, num2);
+    console.log(result)
+    var finalResult = subtract(result, num3);
 
     expect(finalResult).to.eql(35);
     console.log(finalResult)
@@ -65,10 +65,25 @@ describe("addDivide", function(){
     var num2 = 30;
     var num3 = 10;
 
-    var result1 = add (num1, num2);
-    var finalResult = divide(result1, num3);
+    var result = add (num1, num2);
+    var finalResult = divide(result, num3);
     console.log(finalResult)
 
     expect(finalResult).to.eql(5)
   });
 })
+
+describe("addThree", function() {
+  it("should add three numbers", function() {
+    var num1 = 10;
+    var num2 = 24;
+    var num3 = 10;
+
+    var result1 = add(num1, num2);
+    console.log(result1)
+    
+    var finalResult1=add(result1, num3)
+    expect(finalResult1).to.eql(44);
+
+  });
+});
