@@ -51,8 +51,24 @@ describe("addSubtract", function(){
     var num3 = 30;
 
     var result1 = add(num1, num2);
+    console.log(result1)
     var finalResult = subtract(result1, num3);
 
     expect(finalResult).to.eql(35);
+    console.log(finalResult)
   });
 });
+
+describe("addDivide", function(){
+  it("should add first two numbers, then divide by the third number", function (){
+    var num1 = 20;
+    var num2 = 30;
+    var num3 = 10;
+
+    var result1 = add (num1, num2);
+    var finalResult = divide(result1, num3);
+    console.log(finalResult)
+
+    expect(finalResult).to.eql(5)
+  });
+})
