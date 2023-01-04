@@ -43,3 +43,16 @@ describe("divide", function() {
     expect(result).to.eql(3);
   });
 });
+
+describe("addSubtract", function(){
+  it("should add first two numbers, then subtract the third number", function(){
+    var num1 = 45;
+    var num2 = 20;
+    var num3 = 30;
+
+    var result1 = add(num1, num2);
+    var finalResult = subtract(result1, num3);
+
+    expect(finalResult).to.eql(35);
+  });
+});
