@@ -16,3 +16,11 @@ var logEvenNums = function(num){
         }
     }
 }
+
+//alt below works by iterating by 2, which works when starting from index of 0, and seeking only even nums to print.
+
+var logEvenNums = function (num) {
+    for (var i = 0; i <= num; i += 2) {
+      console.log(i);
+    }
+  };
