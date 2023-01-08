@@ -8,3 +8,11 @@
 //iterate at one whole num for each loop or by two since starting from zero and only logging even.
 //use if to check even
 //console.log results
+
+var logEvenNums = function(num){
+    for (i = 0; i <= num; i++) {
+        if(i % 2 === 0) {
+            console.log(i)
+        }
+    }
+}
