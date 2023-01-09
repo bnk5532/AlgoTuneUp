@@ -10,3 +10,19 @@
 //loop over the length of the given array
 //write if/else statement for 3 scenarios
 //print fizz, buzz or fizz buzz respectively else print number
+
+var fizzBuzz = function (arr) {
+  for (let i = 0; i < arr.length; i++) {
+    var currentNum = arr[i];
+
+    if (currentNum % 15 === 0) {
+      console.log("Fizz-Buzz");
+    } else if (currentNum % 3 === 0) {
+      console.log("Fizz");
+    } else if (currentNum % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(currentNum);
+    }
+  }
+};
