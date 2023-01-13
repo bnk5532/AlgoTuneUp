@@ -5,4 +5,13 @@
 //needs variable defined for string in reverse, so it can be compared to original string
 //if/else to return true or false
 
-
+var isPalindrome = function (str) {
+  var reverse = str.split("").reverse().join("");
+    console.log(reverse)
+    console.log(str)
+  if (reverse === str) {
+    return true;
+  } else {
+    return false;
+  }
+};
