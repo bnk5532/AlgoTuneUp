@@ -27,3 +27,4 @@ var titleCase = function(str){
     }
     return result.join(' ');
 }
+
