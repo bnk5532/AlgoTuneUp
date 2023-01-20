@@ -9,16 +9,18 @@
 //return result
 
 var camelCase = (str) => {
-    var result = "";
-    var words = str.toLowerCase().split(" ");
+  var result = "";
+  var words = str.toLowerCase().split(" ");
 
-    for (let i = 0; i < words.length; i++) {
-        var word = words[i]
-        var letters = word.split("");
-        
-        if(i>0) {
-            letters[0] = letters[0].toUpperCase();
-        }
-        result += letters.join("");
+  for (let i = 0; i < words.length; i++) {
+    var word = words[i];
+    var letters = word.split("");
+    console.log(word, letters);
+
+    if (i > 0) {
+      letters[0] = letters[0].toUpperCase();
     }
+    result += letters.join("");
+  }
+  console.log(result);
 };
