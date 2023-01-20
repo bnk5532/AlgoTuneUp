@@ -12,7 +12,7 @@ var camelCase = (str) => {
   var result = "";
   var words = str.toLowerCase().split(" ");
 
-  for (let i = 0; i < words.length; i++) {
+  for (var i = 0; i < words.length; i++) {
     var word = words[i];
     var letters = word.split("");
     console.log(word, letters);
@@ -22,5 +22,6 @@ var camelCase = (str) => {
     }
     result += letters.join("");
   }
+  return result
   console.log(result);
 };
