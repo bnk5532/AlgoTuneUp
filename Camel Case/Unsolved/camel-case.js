@@ -7,3 +7,18 @@
 //use uppercase method to capitalize first let of each word except for index 0.
 //use method to join and/or trim spaces between words.
 //return result
+
+var camelCase = (str) => {
+    var result = "";
+    var words = str.toLowerCase().split(" ");
+
+    for (let i = 0; i < words.length; i++) {
+        var word = words[i]
+        var letters = word.split("");
+        
+        if(i>0) {
+            letters[0] = letters[0].toUpperCase();
+        }
+        result += letters.join("");
+    }
+};
